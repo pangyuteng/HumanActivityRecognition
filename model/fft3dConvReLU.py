@@ -391,7 +391,7 @@ class fft3dConvReLUPool(Layer):
 
         return rval
 
-    @functools.wraps(Layer.get_monitoring_channels_from_state)
+    #pteng @functools.wraps(Layer.get_monitoring_channels_from_state)
     def get_monitoring_channels_from_state(self, state, target=None):
         return self.get_monitoring_channels_from_state()
 
