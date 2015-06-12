@@ -10,6 +10,7 @@ from pylearn2.utils.serial import load_train_file
 import sys
 sys.path.append(r'D:\SciSoft\code')
 
+
 @no_debug_mode
 def test_train_example():
     """ tests that the grbm_smd example script runs correctly """
@@ -28,6 +29,7 @@ def test_train_example():
                                    'UCF101fftConv3d4_testset.yml')
     train_object = load_train_file(train_yaml_path)
     print(train_object)
+    sys.exit(0)
     # Make the termination criterion really lax so that it is quick
     train_object.algorithm.termination_criterion.prop_decrease = 0.5
     train_object.algorithm.termination_criterion.N = 1
